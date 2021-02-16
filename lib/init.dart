@@ -3,8 +3,8 @@ import 'package:path_provider/path_provider.dart';
 import 'package:path/path.dart';
 import 'package:sembast/sembast.dart';
 import 'package:sembast/sembast_io.dart';
-import 'package:sembast_tutorial/cake_repository.dart';
-import 'package:sembast_tutorial/sembast_cake_repository.dart';
+import 'package:sembast_tutorial/jsonStringMap_repository.dart';
+import 'package:sembast_tutorial/sembast_jsonStringMap_repository.dart';
 
 class Init {
   static Future initialize() async {
@@ -13,7 +13,7 @@ class Init {
   }
 
   static _registerRepositories(){
-    GetIt.I.registerLazySingleton<CakeRepository>(() => SembastCakeRepository());
+    GetIt.I.registerLazySingleton<JsonStringMapRepository>(() => SembastJsonStringMapRepository());
     print("after register repository");
   }
 
