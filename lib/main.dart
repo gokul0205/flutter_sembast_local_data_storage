@@ -15,7 +15,7 @@ class _JsonStringMapAppState extends State<JsonStringMapApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'My Favorite JsonStringMaps',
+      title: 'Saved Data',
       home: FutureBuilder(
         future: _init,
         builder: (context, snapshot){
